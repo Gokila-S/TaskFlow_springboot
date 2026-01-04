@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addBtn = document.getElementById('add-btn');
     const todoList = document.getElementById('todo-list');
 
-    const apiUrl = 'http://localhost:8082/api/todos';
+    const apiUrl = 'http://localhost:8083/api/todos';
 
     // Fetch and display all todos
     async function fetchTodos() {
