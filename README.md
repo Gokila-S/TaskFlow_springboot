@@ -1,6 +1,6 @@
 # Todo Application
 
-A full-stack Todo application consisting of a Spring Boot backend REST API and a vanilla HTML/CSS/JavaScript frontend.
+A full-stack Todo application built with a **Spring Boot** REST API backend and a lightweight **vanilla HTML/CSS/JavaScript** frontend. Supports full CRUD operations with a clean, responsive UI.
 
 ## Features
 
@@ -94,7 +94,7 @@ The backend exposes the following REST endpoints at `http://localhost:8083/api/t
 ## Project Structure
 
 ```
-Todo_app/
+Todo_SpringBoot/
 ├── Backend/                 # Spring Boot Application
 │   ├── src/
 │   │   ├── main/
