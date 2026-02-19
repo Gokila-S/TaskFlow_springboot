@@ -1,13 +1,13 @@
-# Todo Application
+# TaskFlow Application
 
-A full-stack Todo application built with a **Spring Boot** REST API backend and a lightweight **vanilla HTML/CSS/JavaScript** frontend. Supports full CRUD operations with a clean, responsive UI.
+A full-stack TaskFlow application built with a **Spring Boot** REST API backend and a lightweight **vanilla HTML/CSS/JavaScript** frontend. Supports full CRUD operations with a clean, responsive UI.
 
 ## Features
 
-- Create valid Todos
-- Read/View list of Todos
-- Update existing Todos
-- Delete Todos
+- Create valid Tasks
+- Read/View list of Tasks
+- Update existing Tasks
+- Delete Tasks
 - Simple and responsive UI
 
 ## Tech Stack
@@ -37,9 +37,9 @@ Before running this project, make sure you have the following installed:
 ### 1. Database Setup
 
 1. Open your MySQL client (Workbench, Command Line, etc.).
-2. Create a new database named `todo_db`:
+2. Create a new database named `taskflow_db`:
    ```sql
-   CREATE DATABASE todo_db;
+   CREATE DATABASE taskflow_db;
    ```
 3. Update the database configuration in `Backend/src/main/resources/application.properties` if your MySQL credentials differ from the defaults:
    ```properties
@@ -73,14 +73,14 @@ The backend server will start on `http://localhost:8083`.
 
 ## API Endpoints
 
-The backend exposes the following REST endpoints at `http://localhost:8083/api/todos`:
+The backend exposes the following REST endpoints at `http://localhost:8083/api/tasks`:
 
-| Method | Endpoint         | Description          |
-| :----- | :--------------- | :------------------- |
-| `GET`  | `/api/todos`     | Retrieve all existing todos |
-| `POST` | `/api/todos`     | Create a new todo item      |
-| `PUT`  | `/api/todos/{id}`| Update a todo by ID         |
-| `DELETE`| `/api/todos/{id}`| Delete a todo by ID         |
+| Method | Endpoint          | Description               |
+| :----- | :---------------- | :------------------------ |
+| `GET`  | `/api/tasks`      | Retrieve all existing tasks |
+| `POST` | `/api/tasks`      | Create a new task item      |
+| `PUT`  | `/api/tasks/{id}` | Update a task by ID         |
+| `DELETE`| `/api/tasks/{id}`| Delete a task by ID         |
 
 ### Sample JSON Payload (for POST/PUT)
 
@@ -94,7 +94,7 @@ The backend exposes the following REST endpoints at `http://localhost:8083/api/t
 ## Project Structure
 
 ```
-Todo_SpringBoot/
+TaskFlow_SpringBoot/
 ├── Backend/                 # Spring Boot Application
 │   ├── src/
 │   │   ├── main/
